@@ -50,7 +50,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.app.localization.deployto }}
       nodeSelector:
-        device: {{ .Values.app.localization.deployto }}
+        device: {{ .Values.app.localization.deployto | quote }}
       {{- end }}
     {{- with .Values.affinity }}
       affinity:
