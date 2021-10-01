@@ -18,6 +18,15 @@ questions:
   type: string
   label: Localized Title
   group: "App Configuration"
+- variable: app.localization.deployto
+  default: "camera-ok"
+  description: "select where you want to deploy to?"
+  type: enum
+  options:
+    - "camera-ok"
+    - "camera-ng"
+  label: "Deploy to"
+  group: "App Configuration"
 - variable: app.localization.pets
   default: "cows"
   description: "Pick your favourite container pet!"
