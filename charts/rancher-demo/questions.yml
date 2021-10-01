@@ -24,7 +24,6 @@ questions:
   type: enum
   options:
     - "camera-ok"
-    - "camera-ng"
   label: "Deploy to"
   group: "App Configuration"
 - variable: app.localization.pets
