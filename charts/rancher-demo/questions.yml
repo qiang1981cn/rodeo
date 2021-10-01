@@ -19,7 +19,7 @@ questions:
   label: Localized Title
   group: "App Configuration"
 - variable: app.localization.deployto
-  default: "camera-ok"
+  default: ""
   description: "select where you want to deploy to?"
   type: enum
   options:

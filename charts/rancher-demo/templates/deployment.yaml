@@ -48,9 +48,9 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-      {{- with .Values.nodeSelector }}
+      {{- with .Values.app.localization.deployto }}
       nodeSelector:
-        {{- toYaml . | nindent 8 }}
+        device: {{ .Values.app.localization.deployto }}
       {{- end }}
     {{- with .Values.affinity }}
       affinity:
